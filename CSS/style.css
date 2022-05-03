@@ -1,7 +1,18 @@
+<!--universal selector-->
+* {
+  border: 1px solid red;
+}
+
+<!--type selectors-->
 p {
   color: green;
 }
 
 h1 {
   color: maroon;
+}
+
+<!--overides h1-->
+.title {
+  color: teal;
 }
