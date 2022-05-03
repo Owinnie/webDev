@@ -1,7 +1,83 @@
 p {
   color: blue !important;   <!--overides regardless of specificity-->
+  height: 80px;
+  width: 240px;
+  border: 3px solid coral;
+           |    |      |_____ <!--color-->
+           |    |____________ <!--style: dotted, solid...-->
+           |_________________ <!-- width-->                    
+  border-radius: 5px;
+  padding: 10px;    <!--space around content in the box-->
 }
- 
+
 .main p {
   color: red;
+  
+  <!--padding options-->
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+<!--padding shaorthand-->
+<!--top, right, bottom, left-->
+{
+    padding: 6px 11px 4px 9px;
+}
+
+<!--top == bottom && right == left-->
+{
+  padding: 5px 10px;
+}
+
+<!--margin-->
+p {
+  margin: 20px;
+  
+  <!-- margin options: top, bottom, left, right -->
+  margin-left: 15px;
+  
+  <!-- margin shorthand: top->right->bottom->left -->
+  margin: 6px 10px 5px 12px;
+  
+  <!--top == bottom && right == left-->
+  margin: 20px 10px;
+  
+  <!-- Auto: center/ align -->
+  width: 350px;
+  margin: 0 auto;
+}
+
+<!-- min && max height && width -->
+p {
+  min-width: 300px;
+  max-width: 600px;
+  
+  min-height: 150px;
+  max-height: 300px;
+}
+
+<!-- dealing with overflow -->
+
+p {
+  height: 1000px;
+  overflow: scroll;   <!-- appearance of scroll bar -->
+}
+
+<!-- ressetting user agent(defaults) stylesheets -->
+* {
+  margin: 0;
+  padding: 0;
+}
+
+<!-- visibility: hidden, visible, collapse. Space left. Seen in source code-->
+<ol>
+  <li>item i</li>
+  <li>item ii</li>
+  <li class="unseen">item iii</li>
+</ol>
+
+.unseen {
+  visibility: hidden;
 }
