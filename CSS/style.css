@@ -6,16 +6,23 @@
 <!--type selectors-->
 p {
   color: green;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 h1 {
   color: maroon;
+  font-family: Georgia;
+  text-align: center;
+  opacity: 0.75;    <!--visibility of the background: 0-1-->
 }
 
 <!--class selector '.'-->
 <!--overides h1-->
 .title {
   color: teal;
+  background-color: white;
 }
 
 .uppercase {    <!--applies to any selector with class uppercase>
@@ -63,4 +70,16 @@ h2.destination {
 <!--Multiple selectors: combine selectors to reduce lines of code ','-->
 h5, li {
   font-family: monospace;
+}
+
+<!--changing background image>
+
+/*relative path*/
+.backgrnd {
+  background-image: url('pictures/sports.png');
+}
+
+/*external link*/
+.backgrnd {
+  background-image: url('https://www.example.com/photo.png');
 }
