@@ -1,0 +1,7 @@
+p {
+  color: blue !important;   <!--overides regardless of specificity-->
+}
+ 
+.main p {
+  color: red;
+}
