@@ -81,3 +81,16 @@ p {
 .unseen {
   visibility: hidden;
 }
+
+<!-- changing the box model -->
+
+* {
+  box-sizing: border-box;  
+}
+
+h1 {    <!-- content are sized according to remaining width -->
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
