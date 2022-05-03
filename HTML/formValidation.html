@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FORM VALIDATION</title>  
+</head>
+<body>
+  <section class="overlay">
+			<h1>Sign Up</h1>
+      <p>Create an account:</p>
+      <form action="submission.html" method="GET">
+        <label for="username">Username:</label>
+        <br>
+        
+        <!--required flag--> can't be submitted empty-->
+        <!--min: least value; max: biggest value acceptable-->
+				<input id="username" name="username" type="text" min="1" max="10" required minlength="3" maxlength="15">
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+        
+        <!--pattern: uses regex to specify a format-->
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">More about Regex</a>
+        <input id="pw" name="pw" type="password" required minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+</body>
+</html>
