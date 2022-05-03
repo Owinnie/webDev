@@ -1,4 +1,4 @@
-<!--universal selector-->
+<!--universal selector '*'-->
 * {
   border: 1px solid red;
 }
@@ -12,7 +12,55 @@ h1 {
   color: maroon;
 }
 
+<!--class selector '.'-->
 <!--overides h1-->
 .title {
   color: teal;
+}
+
+.uppercase {    <!--applies to any selector with class uppercase>
+  text-transform: uppercase;
+}
+
+<!-- using id '#'-->
+#article-title {
+  font-family: cursive;
+}
+
+<!-- Attribute selectors-->
+a[href*='florence'] {
+  color: lightgreen;
+}
+
+<!--pseudo-class ':'-->
+a:hover {
+  color: darkorange;
+}
+
+<!--specificity: type, class, id-->
+h5 {
+  color: yellow;
+}
+ 
+.author-class {
+  color: pink;
+}
+ 
+#author-id {      <!--most specific, thus is used-->
+  color: cornflowerblue;
+}
+
+<!--chaining-->
+h2.destination {
+  font-family: Tahoma;
+}
+
+<!--Descendant combinator-->
+.description h5 {
+  color: blueviolet;
+}
+
+<!--Multiple selectors: combine selectors to reduce lines of code ','-->
+h5, li {
+  font-family: monospace;
 }
